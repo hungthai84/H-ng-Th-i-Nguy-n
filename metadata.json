@@ -1,6 +1,7 @@
 {
   "requestFramePermissions": [
-    "microphone"
+    "microphone",
+    "geolocation"
   ],
   "name": "Copy of Copy of Hùng Thái 22 .08  Đang thực hiện",
   "description": "22 .08 ",

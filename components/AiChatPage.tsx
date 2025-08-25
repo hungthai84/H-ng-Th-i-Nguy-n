@@ -253,7 +253,7 @@ const AiChatPage: React.FC<{ id?: string }> = ({ id }) => {
                     <div key={msg.id} className={`chat-message ${msg.sender === 'user' ? 'user' : 'ai'}`}>
                         <div className={`chat-avatar ${msg.sender} ${isLoading && msg.isStreaming ? 'thinking' : ''}`}>
                             {msg.sender === 'model' ? (
-                                <img src="https://i.postimg.cc/q73XWkGg/Logo-AI.png" alt={pageData.avatarAlt} />
+                                <img src="https://i.postimg.cc/nhWTyNyG/Avata-Gif-2.gif" alt={pageData.avatarAlt} />
                             ) : (
                                 <Icons.UserIcon className="user-icon-svg" />
                             )}
@@ -276,7 +276,7 @@ const AiChatPage: React.FC<{ id?: string }> = ({ id }) => {
                 {isLoading && messages[messages.length-1]?.sender !== 'model' && (
                     <div className="chat-message ai">
                         <div className="chat-avatar thinking">
-                           <img src="https://i.postimg.cc/q73XWkGg/Logo-AI.png" alt={pageData.avatarAlt} />
+                           <img src="https://i.postimg.cc/nhWTyNyG/Avata-Gif-2.gif" alt={pageData.avatarAlt} />
                         </div>
                         <div className="message-bubble">
                             <div className="typing-indicator"><span></span><span></span><span></span></div>
@@ -294,7 +294,7 @@ const AiChatPage: React.FC<{ id?: string }> = ({ id }) => {
             <div className="ai-suggestions-view">
                 <div className="chat-message ai ai-welcome-message">
                     <div className="chat-avatar">
-                        <img src="https://i.postimg.cc/q73XWkGg/Logo-AI.png" alt={pageData.avatarAlt} />
+                        <img src="https://i.postimg.cc/nhWTyNyG/Avata-Gif-2.gif" alt={pageData.avatarAlt} />
                     </div>
                     <div className="message-bubble">
                         <p>{pageData.welcomeMessage}</p>

@@ -1249,7 +1249,12 @@ export const en = {
             ]
         }
     }
-  }
+  },
+  clockWidget: {
+    loading: "Loading...",
+    unavailable: "Unavailable",
+    apiError: "API Key Missing"
+  },
 };
 
 export const vi = {
@@ -2500,5 +2505,10 @@ export const vi = {
             ]
         }
     }
-  }
+  },
+  clockWidget: {
+    loading: "Đang tải...",
+    unavailable: "Không có",
+    apiError: "Thiếu API Key"
+  },
 };

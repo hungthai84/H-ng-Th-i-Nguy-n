@@ -67,6 +67,7 @@ import {
     Printer,
     LayoutGrid,
     List,
+    Loader2,
     Columns
 } from 'lucide-react';
 
@@ -138,4 +139,5 @@ export const CheckIcon = Check;
 export const PrinterIcon = Printer;
 export const LayoutGridIcon = LayoutGrid;
 export const ListIcon = List;
+export const LoaderIcon = Loader2;
 export const ColumnsIcon = Columns;
