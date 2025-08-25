@@ -1,5 +1,17 @@
 
-
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.7.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.417.0",
+    "react-dom": "https://esm.sh/react-dom@^19.1.0",
+    "three": "https://esm.sh/three@0.167.0"
+  }
+}
+</script>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -4024,6 +4036,7 @@
         background: #fff !important;
         color: #000 !important;
         font-size: 9pt;
+        min-width: 0 !important;
       }
 
       @page {
@@ -4046,34 +4059,53 @@
       
       .print-page {
         page-break-after: always;
-        page-break-inside: avoid;
-        margin: 0;
         width: 100%;
         height: auto;
         overflow: visible !important;
         background: #fff !important;
         box-sizing: border-box;
         padding: 0;
-        box-shadow: none;
-        border: none;
-        position: relative;
+        margin: 0;
+        box-shadow: none !important;
+        border: none !important;
       }
       #printable-content > .print-page:last-child {
         page-break-after: auto;
       }
 
-      /* Hide non-printable UI elements within components */
-      .print-page .about-header,
-      .print-page .header-controls,
-      .print-page .scroll-progress-nav-container,
-      .print-page .custom-video-player-wrapper,
-      .print-page .timeline-navigation-wrapper,
-      .print-page .projects-controls-wrapper,
-      .print-page .memories-filters,
-      .print-page .btn,
-      .project-card-new.has-post,
-      .bio-video-wrapper,
-      .signature-image {
+      /* Generic override for all scrollable containers */
+      .no-scrollbar,
+      .page-container, .info-card, .about-page-content-wrapper,
+      .skills-categories-wrapper, .education-grid, .achievements-page-grid,
+      .services-grid, .projects-grid-wrapper, .job-card-scrollable-content,
+      .cover-letter-content, .memories-grid-container, .settings-content-container,
+      .print-preview-content, .project-post-scroll-content {
+          overflow: visible !important;
+          height: auto !important;
+          max-height: none !important;
+      }
+
+      /* Prevent items from breaking across pages */
+      .job-card, .project-card-new, .resume-item-card, .education-card, 
+      .achievement-card, .service-box, .about-info-item, .bio-section {
+          page-break-inside: avoid !important;
+          break-inside: avoid !important;
+      }
+      
+      /* Un-clamp text that was previously hidden */
+      .project-card-new-description {
+         -webkit-line-clamp: unset !important;
+         height: auto !important;
+         overflow: visible !important;
+      }
+
+      /* Hide non-printable UI elements */
+      .about-header, .header-controls, .scroll-progress-nav-container,
+      .custom-video-player-wrapper, .timeline-navigation-wrapper,
+      .projects-controls-wrapper, .memories-filters, .btn,
+      .project-card-new.has-post, .bio-video-wrapper, .signature-image,
+      .home-hero-card-bg-video, .home-hero-card-overlay, .job-image-slider-container,
+      .language-switcher {
         display: none !important;
       }
 
@@ -4083,40 +4115,8 @@
         box-shadow: none !important;
         border: none !important;
         height: auto !important;
-        overflow: visible !important;
         background: transparent !important;
       }
-      
-      .about-page-content-wrapper,
-      .skills-categories-wrapper,
-      .education-grid,
-      .achievements-page-grid,
-      .services-grid,
-      .projects-grid-wrapper,
-      .job-card-scrollable-content,
-      .cover-letter-content,
-      .memories-grid-container {
-        overflow: visible !important;
-        height: auto !important;
-      }
-      .no-scrollbar {
-          -ms-overflow-style: none; scrollbar-width: none;
-      }
-      .no-scrollbar::-webkit-scrollbar { display: none; }
-
-      .skills-categories-wrapper, .about-info-grid, .education-grid, .services-grid {
-          grid-template-columns: 1fr 1fr 1fr !important;
-      }
-      .achievements-page-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr !important;
-      }
-      .cover-letter-content {
-        column-count: 2;
-        column-gap: 2rem;
-      }
-      
-      /* Ensure hero video doesn't show */
-      .home-hero-card-bg-video, .home-hero-card-overlay { display: none !important; }
       .home-hero-card-content-wrapper {
           background: #f8f9fa;
           border: 1px solid #ddd;
@@ -4124,41 +4124,39 @@
           height: auto;
           justify-content: center;
           align-items: center;
+          padding: 1rem;
       }
       .home-hero-content { text-align: center; align-items: center; }
 
-      .job-card {
-          box-shadow: none !important;
-          border: 1px solid #ddd !important;
-          page-break-inside: avoid;
+      /* Apply multi-column layouts for density */
+      .cover-letter-inner-card {
+        column-count: 2;
+        column-gap: 2rem;
       }
-      .job-image-slider-container { display: none; }
-      
-      .print-page h1, .print-page h2, .print-page h3, .print-page h4 {
-        margin-top: 0.5rem;
-        margin-bottom: 0.5rem;
+      .skills-categories-wrapper {
+        column-count: 2;
+        gap: 1.5rem;
       }
-      .print-page h1 { font-size: 16pt; }
-      .print-page h2 { font-size: 14pt; }
-      .print-page h3 { font-size: 12pt; }
-      .print-page h4 { font-size: 10pt; }
-      .print-page p, .print-page li, .print-page .value {
-        font-size: 9pt !important;
-        line-height: 1.4 !important;
-        margin-bottom: 0.5rem;
+      .projects-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 1rem;
       }
-      .print-page .cover-letter-inner-card, .print-page .resume-item-card, .print-page .education-card, .print-page .service-box, .print-page .job-card, .print-page .achievement-card, .print-page .about-info-item {
-        padding: 0.5rem !important;
-        border: 1px solid #eee;
-      }
-      .print-page .skills-categories-wrapper, .print-page .education-grid, .print-page .services-grid, .print-page .achievements-page-grid, .print-page .about-info-grid {
-        gap: 0.75rem !important;
-      }
-      .print-page .timeline-container.vertical {
-        gap: 0.5rem !important;
-      }
-      .print-page .job-card-details-grid {
+       .about-info-grid, .education-grid, .services-grid, .achievements-page-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
         gap: 1rem !important;
+      }
+
+      /* Tweak font sizes and margins for print */
+      h1, h2, h3, h4 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+      h1 { font-size: 16pt; }
+      h2 { font-size: 14pt; }
+      h3 { font-size: 12pt; }
+      h4 { font-size: 10pt; }
+      p, li, .value { font-size: 9pt !important; line-height: 1.4 !important; margin-bottom: 0.5rem; }
+      
+      .job-card, .resume-item-card, .education-card, .service-box, .achievement-card, .about-info-item, .project-card-new {
+        padding: 0.75rem !important;
+        border: 1px solid #eee !important;
       }
     }
     

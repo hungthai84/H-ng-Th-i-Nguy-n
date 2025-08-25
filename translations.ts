@@ -414,88 +414,152 @@ export const en = {
   },
   achievementsPage: {
     badge: "Achievements",
-    tooltipTitle: "Key Achievements",
-    tooltipText: "A collection of key achievements and performance awards throughout my career.",
+    tooltipTitle: "Capability Milestones",
+    tooltipText: "A collection of key milestones in building and developing Customer Service capabilities.",
     achievements: [
       {
-          id: "1",
-          title: "Top Performer of the Year",
-          branch: "VED (Vietnam eSport)",
-          rate: 98,
-          category: "Performance",
-          hashtag: "#TopPerformer",
-          icon: "TrophyIcon",
-          color: "#FFB300"
-      },
-      {
-          id: "2",
-          title: "Customer Satisfaction Excellence",
-          branch: "Mservice (MoMo)",
-          rate: 95,
-          category: "CX",
-          hashtag: "#CSAT",
-          icon: "SparklesIcon",
-          color: "#D82D8B"
-      },
-      {
-          id: "3",
-          title: "Best Team Leader Award",
-          branch: "V247 Call",
-          rate: 92,
-          category: "Leadership",
-          hashtag: "#Leadership",
-          icon: "UsersIcon",
-          color: "#1E90FF"
-      },
-      {
-          id: "4",
-          title: "Process Optimization Initiative",
-          branch: "Prudential Vietnam",
-          rate: 90,
-          category: "Innovation",
-          hashtag: "#Efficiency",
-          icon: "ClipboardDocumentListIcon",
-          color: "#AE2070"
-      },
-      {
-          id: "5",
-          title: "CRM System Launch",
-          branch: "Mservice (MoMo)",
+          id: "1.1",
+          title: "Building the Customer Service Department",
           rate: 100,
-          category: "Project",
-          hashtag: "#CRM",
-          icon: "ServerIcon",
-          color: "#D82D8B"
+          category: "📌 1. Strategy & Management",
+          hashtag: "#CS_Strategy",
+          icon: "UsersIcon",
+          color: "#6C6CE5"
       },
       {
-          id: "6",
-          title: "Outstanding Contribution Award",
-          branch: "LBC",
-          rate: 94,
-          category: "Contribution",
-          hashtag: "#Excellence",
+          id: "1.2",
+          title: "Setting Departmental Goals",
+          rate: 80,
+          category: "📌 1. Strategy & Management",
+          hashtag: "#CS_Strategy",
           icon: "TrophyIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "1.3",
+          title: "Enhancing Customer Experience",
+          rate: 90,
+          category: "📌 1. Strategy & Management",
+          hashtag: "#CS_Strategy",
+          icon: "SparklesIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "1.4",
+          title: "CS Project Management",
+          rate: 90,
+          category: "📌 1. Strategy & Management",
+          hashtag: "#CS_Strategy",
+          icon: "FolderIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "1.5",
+          title: "Driving Product Improvement",
+          rate: 82,
+          category: "📌 1. Strategy & Management",
+          hashtag: "#CS_Strategy",
+          icon: "LightBulbIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "2.1",
+          title: "Standardizing CS Processes",
+          rate: 90,
+          category: "⚙️ 2. Operations & Process",
+          hashtag: "#CS_Operations",
+          icon: "ClipboardDocumentListIcon",
           color: "#F37021"
       },
       {
-          id: "7",
-          title: "Employee of the Month (x5)",
-          branch: "Mobifone",
-          rate: 96,
-          category: "Performance",
-          hashtag: "#Consistent",
-          icon: "UserIcon",
+          id: "2.2",
+          title: "Optimizing Support Channels",
+          rate: 100,
+          category: "⚙️ 2. Operations & Process",
+          hashtag: "#CS_Operations",
+          icon: "ChatBubbleLeftRightIcon",
+          color: "#F37021"
+      },
+      {
+          id: "2.3",
+          title: "Implementing Automation",
+          rate: 50,
+          category: "⚙️ 2. Operations & Process",
+          hashtag: "#CS_Operations",
+          icon: "CpuIcon",
+          color: "#F37021"
+      },
+      {
+          id: "2.4",
+          title: "Managing Outbound Campaigns",
+          rate: 100,
+          category: "⚙️ 2. Operations & Process",
+          hashtag: "#CS_Operations",
+          icon: "PaperAirplaneIcon",
+          color: "#F37021"
+      },
+      {
+          id: "3.1",
+          title: "Building a CRM System",
+          rate: 100,
+          category: "💡 3. Technology & Data",
+          hashtag: "#CS_TechData",
+          icon: "ServerIcon",
           color: "#0078D4"
       },
       {
-          id: "8",
-          title: "Successful E-commerce Integration",
-          branch: "Prudential Vietnam",
-          rate: 97,
-          category: "Project",
-          hashtag: "#FinTech",
-          icon: "CubeIcon",
+          id: "3.2",
+          title: "Analysis & Reporting",
+          rate: 100,
+          category: "💡 3. Technology & Data",
+          hashtag: "#CS_TechData",
+          icon: "ChartBarIcon",
+          color: "#0078D4"
+      },
+      {
+          id: "3.3",
+          title: "Customer Surveys & Evaluation",
+          rate: 80,
+          category: "💡 3. Technology & Data",
+          hashtag: "#CS_TechData",
+          icon: "ClipboardList",
+          color: "#0078D4"
+      },
+      {
+          id: "3.4",
+          title: "Building AI Bot",
+          rate: 10,
+          category: "💡 3. Technology & Data",
+          hashtag: "#CS_TechData",
+          icon: "BotIcon",
+          color: "#0078D4"
+      },
+      {
+          id: "4.1",
+          title: "Developing Online Training",
+          rate: 100,
+          category: "📚 4. Training & Development",
+          hashtag: "#CS_Learning",
+          icon: "BookOpenIcon",
+          color: "#49C16C"
+      },
+      {
+          id: "5.1",
+          title: "Establishing a Support Center",
+          rate: 50,
+          category: "🏢 5. Support Center & Self-Service",
+          hashtag: "#CS_SelfService",
+          icon: "LifebuoyIcon",
           color: "#AE2070"
+      },
+      {
+          id: "6",
+          title: "Customer Centricity",
+          rate: 2,
+          category: "🔄 6. Customer Centricity",
+          hashtag: "#CustomerCentric",
+          icon: "HeartIcon",
+          color: "#ED1B2F"
       }
     ]
   },
@@ -1601,88 +1665,152 @@ export const vi = {
   },
   achievementsPage: {
     badge: "Thành tích",
-    tooltipTitle: "Thành tựu nổi bật",
-    tooltipText: "Tổng hợp các thành tích chính và giải thưởng hiệu suất trong suốt sự nghiệp của tôi.",
+    tooltipTitle: "Các cột mốc năng lực",
+    tooltipText: "Tổng hợp các cột mốc quan trọng trong việc xây dựng và phát triển năng lực Dịch vụ Khách hàng.",
     achievements: [
       {
-          id: "1",
-          title: "Nhân viên xuất sắc nhất năm",
-          branch: "VED (Vietnam eSport)",
-          rate: 98,
-          category: "Hiệu suất",
-          hashtag: "#TopPerformer",
-          icon: "TrophyIcon",
-          color: "#FFB300"
-      },
-      {
-          id: "2",
-          title: "Xuất sắc về sự hài lòng của khách hàng",
-          branch: "Mservice (MoMo)",
-          rate: 95,
-          category: "Trải nghiệm KH",
-          hashtag: "#CSAT",
-          icon: "SparklesIcon",
-          color: "#D82D8B"
-      },
-      {
-          id: "3",
-          title: "Giải thưởng Trưởng nhóm xuất sắc nhất",
-          branch: "V247 Call",
-          rate: 92,
-          category: "Lãnh đạo",
-          hashtag: "#Leadership",
-          icon: "UsersIcon",
-          color: "#1E90FF"
-      },
-      {
-          id: "4",
-          title: "Sáng kiến Tối ưu hóa Quy trình",
-          branch: "Prudential Việt Nam",
-          rate: 90,
-          category: "Sáng kiến",
-          hashtag: "#HiệuQuả",
-          icon: "ClipboardDocumentListIcon",
-          color: "#AE2070"
-      },
-      {
-          id: "5",
-          title: "Ra mắt hệ thống CRM",
-          branch: "Mservice (MoMo)",
+          id: "1.1",
+          title: "Xây dựng phòng Dịch vụ Khách hàng",
           rate: 100,
-          category: "Dự án",
-          hashtag: "#CRM",
-          icon: "ServerIcon",
-          color: "#D82D8B"
+          category: "📌 1. Chiến lược & Quản lý",
+          hashtag: "#CS_Strategy",
+          icon: "UsersIcon",
+          color: "#6C6CE5"
       },
       {
-          id: "6",
-          title: "Giải thưởng Đóng góp nổi bật",
-          branch: "LBC",
-          rate: 94,
-          category: "Đóng góp",
-          hashtag: "#XuấtSắc",
+          id: "1.2",
+          title: "Đặt mục tiêu phòng ban",
+          rate: 80,
+          category: "📌 1. Chiến lược & Quản lý",
+          hashtag: "#CS_Strategy",
           icon: "TrophyIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "1.3",
+          title: "Nâng cao trải nghiệm khách hàng",
+          rate: 90,
+          category: "📌 1. Chiến lược & Quản lý",
+          hashtag: "#CS_Strategy",
+          icon: "SparklesIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "1.4",
+          title: "Quản lý dự án CS",
+          rate: 90,
+          category: "📌 1. Chiến lược & Quản lý",
+          hashtag: "#CS_Strategy",
+          icon: "FolderIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "1.5",
+          title: "Thúc đẩy cải tiến sản phẩm",
+          rate: 82,
+          category: "📌 1. Chiến lược & Quản lý",
+          hashtag: "#CS_Strategy",
+          icon: "LightBulbIcon",
+          color: "#6C6CE5"
+      },
+      {
+          id: "2.1",
+          title: "Chuẩn hóa quy trình CS",
+          rate: 90,
+          category: "⚙️ 2. Vận hành & Quy trình",
+          hashtag: "#CS_Operations",
+          icon: "ClipboardDocumentListIcon",
           color: "#F37021"
       },
       {
-          id: "7",
-          title: "Nhân viên của tháng (x5)",
-          branch: "Mobifone",
-          rate: 96,
-          category: "Hiệu suất",
-          hashtag: "#BềnBỉ",
-          icon: "UserIcon",
+          id: "2.2",
+          title: "Tối ưu hóa kênh hỗ trợ",
+          rate: 100,
+          category: "⚙️ 2. Vận hành & Quy trình",
+          hashtag: "#CS_Operations",
+          icon: "ChatBubbleLeftRightIcon",
+          color: "#F37021"
+      },
+      {
+          id: "2.3",
+          title: "Triển khai tự động hóa",
+          rate: 50,
+          category: "⚙️ 2. Vận hành & Quy trình",
+          hashtag: "#CS_Operations",
+          icon: "CpuIcon",
+          color: "#F37021"
+      },
+      {
+          id: "2.4",
+          title: "Quản lý chiến dịch Outbound",
+          rate: 100,
+          category: "⚙️ 2. Vận hành & Quy trình",
+          hashtag: "#CS_Operations",
+          icon: "PaperAirplaneIcon",
+          color: "#F37021"
+      },
+      {
+          id: "3.1",
+          title: "Xây dựng hệ thống CRM",
+          rate: 100,
+          category: "💡 3. Công nghệ & Dữ liệu",
+          hashtag: "#CS_TechData",
+          icon: "ServerIcon",
           color: "#0078D4"
       },
       {
-          id: "8",
-          title: "Tích hợp TMĐT thành công",
-          branch: "Prudential Việt Nam",
-          rate: 97,
-          category: "Dự án",
-          hashtag: "#FinTech",
-          icon: "CubeIcon",
+          id: "3.2",
+          title: "Phân tích & Báo cáo",
+          rate: 100,
+          category: "💡 3. Công nghệ & Dữ liệu",
+          hashtag: "#CS_TechData",
+          icon: "ChartBarIcon",
+          color: "#0078D4"
+      },
+      {
+          id: "3.3",
+          title: "Khảo sát & Đánh giá khách hàng",
+          rate: 80,
+          category: "💡 3. Công nghệ & Dữ liệu",
+          hashtag: "#CS_TechData",
+          icon: "ClipboardList",
+          color: "#0078D4"
+      },
+      {
+          id: "3.4",
+          title: "Xây dựng AI Bot",
+          rate: 10,
+          category: "💡 3. Công nghệ & Dữ liệu",
+          hashtag: "#CS_TechData",
+          icon: "BotIcon",
+          color: "#0078D4"
+      },
+      {
+          id: "4.1",
+          title: "Phát triển đào tạo trực tuyến",
+          rate: 100,
+          category: "📚 4. Đào tạo & Phát triển",
+          hashtag: "#CS_Learning",
+          icon: "BookOpenIcon",
+          color: "#49C16C"
+      },
+      {
+          id: "5.1",
+          title: "Thành lập Trung tâm hỗ trợ",
+          rate: 50,
+          category: "🏢 5. Trung tâm hỗ trợ & Self-Service",
+          hashtag: "#CS_SelfService",
+          icon: "LifebuoyIcon",
           color: "#AE2070"
+      },
+      {
+          id: "6",
+          title: "Khách hàng là trung tâm",
+          rate: 2,
+          category: "🔄 6. Khách hàng là trung tâm",
+          hashtag: "#CustomerCentric",
+          icon: "HeartIcon",
+          color: "#ED1B2F"
       }
     ]
   },
